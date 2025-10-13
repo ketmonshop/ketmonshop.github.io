@@ -15,13 +15,15 @@
 			.search{margin-top:18px;display:flex;gap:12px}
 			.search input{flex:1;padding:10px 12px;border-radius:8px;border:1px solid #e6eefc}
 			.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:18px}
-			.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 20px rgba(13,26,50,0.06);display:flex;gap:12px;align-items:flex-start}
+			.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 20px rgba(13,26,50,0.06);display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+			.card-header{display:flex;gap:12px;align-items:flex-start;width:100%}
 			.card img{width:84px;height:120px;object-fit:cover;border-radius:6px}
+			.card .info{flex:1}
 			.card h3{margin:0;font-size:16px}
-			.card p{margin:6px 0;color:#445}
-			.card a.view{margin-top:auto;color:var(--accent);text-decoration:none;font-weight:600}
+			.card .desc{margin:6px 0;color:#445;font-size:14px;line-height:1.5;flex-grow:1}
+			.card a.view{margin-top:auto;color:var(--accent);text-decoration:none;font-weight:600;font-size:14px}
 			footer{margin-top:28px;color:#647088;font-size:13px}
-			@media (max-width:520px){.card{flex-direction:row-reverse}.card img{width:74px;height:104px}}
+			@media (max-width:520px){.card-header{flex-direction:row-reverse}.card img{width:74px;height:104px}}
 		</style>
 	</head>
 	<body>
@@ -34,18 +36,32 @@
 			</header>
 
 			<div class="search">
-				<input id="q" placeholder="Search landing pages — try 'O'LMAS' or 'kitob'" aria-label="Search landing pages">
+				<input id="q" placeholder="Search landing pages — try 'Adem' or 'tarbiya'" aria-label="Search landing pages">
 			</div>
 
 			<div class="grid" id="list">
+				<!-- Card: Jazosiz tarbiya -->
+				<article class="card" data-title="Adem Gunesh — Jazosiz tarbiya">
+					<div class="card-header">
+						<img src="https://ketmonshop.uz/offer_images/jazosiz-tarbiya-2016.webp" alt="Jazosiz tarbiya">
+						<div class="info">
+							<h3><a href="./products/jazosiz-tarbiya.html">Adem Gunesh — Jazosiz tarbiya</a></h3>
+						</div>
+					</div>
+					<p class="desc">Xalqaro bestseller (1 milliondan ortiq sotilgan) bo'lgan ushbu kitobda farzand tarbiyasiga inqilobiy yondashuv taklif etiladi. Jazolash o'rniga bolaning ehtiyojlarini tushunish, sabr va ijobiy muloqot orqali kuchli munosabatlar qurishni o'rganing.</p>
+					<a class="view" href="./products/jazosiz-tarbiya.html">Batafsil →</a>
+				</article>
+
 				<!-- Card: Odam bo'lish qiyin -->
 				<article class="card" data-title="O'LMAS UMARBEKOV — Odam bo'lish qiyin">
-					<img src="https://ketmonshop.uz/offer_images/olmas-umarbekov-odam-bolish-qiyin-2348.webp" alt="Odam bo'lish qiyin">
-					<div>
-						<h3><a href="./products/odam-bolish-qiyin.html">O'LMAS UMARBEKOV — Odam bo'lish qiyin</a></h3>
-						<p>Short landing page with synopsis, author bio and links to the official product page.</p>
-						<a class="view" href="./products/odam-bolish-qiyin.html">Open landing page →</a>
+					<div class="card-header">
+						<img src="https://ketmonshop.uz/offer_images/olmas-umarbekov-odam-bolish-qiyin-2348.webp" alt="Odam bo'lish qiyin">
+						<div class="info">
+							<h3><a href="./products/odam-bolish-qiyin.html">O'LMAS UMARBEKOV — Odam bo'lish qiyin</a></h3>
+						</div>
 					</div>
+					<p class="desc">O'lmas Umarbekovning asari hayot, jamiyat va insoniylik haqida chuqur mulohaza yuritishga chorlaydi. Ta'sirli hikoya orqali ruhiy o'sish imkonini bering.</p>
+					<a class="view" href="./products/odam-bolish-qiyin.html">Batafsil →</a>
 				</article>
 			</div>
 
