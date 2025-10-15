@@ -1,5 +1,7 @@
 Bu repozitoriy KetmonShop uchun ochilgan public landing page (mahsulot sahifalari) to'plamidir. Har bir landing page lokal HTML fayl bo'lib, rasmiy KetmonShop mahsulot sahifasiga yo'naltiradi.
 
+**Development version:** [https://ketmonshopuz.web.app](https://ketmonshopuz.web.app)
+
 Qoidalar va talablar
 1. Texnologiyalar:
 	- Landing sahifalar HTML, CSS, JavaScript yoki Tailwind CSS yordamida yaratilishi mumkin.
