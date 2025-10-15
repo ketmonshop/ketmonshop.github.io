@@ -38,6 +38,12 @@ Qoidalar va talablar
 	- Sahifalar SEO va konversiya uchun optimallashtirilgan bo'lishi kerak (meta description, title, og: teglar, toza URL, tez yuklanadigan rasm va minimal JS).
 	- Sahifalar rasmiy mahsulot sahifasiga aniq CTA bilan yo'naltirishi kerak.
 
+8. Barcha landing sahifalar unikal bo'lishi kerak
+
+9. Barcha landing sahifalar yaratilganidan keyin index.html sahifasida unga havola qo'shish kerak
+
+10. Barcha landing sahifalarni AMP versiyalari bo'lishi kerak
+
 Namuna forma (HTML):
 <form action="https://ketmonshop.uz/send.php" method="POST">
   <input type="hidden" name="offer_id" value="2348">
@@ -47,6 +53,6 @@ Namuna forma (HTML):
   <button type="submit">Buyurtma berish</button>
 </form>
 
-Iltimos, barcha yangi landing sahifalarni ushbu qo'llanmaga muvofiq yarating. Agar savol bo'lsa yoki avtomatlashtirish (masalan, indexga avtomatik kartalar qo'shish) kerak bo'lsa, xabar bering.
+Iltimos, barcha yangi landing sahifalarni ushbu qo'llanmaga muvofiq yarating
 
 ![ketmonshop logo](ketmonshop_logo.jpg)
