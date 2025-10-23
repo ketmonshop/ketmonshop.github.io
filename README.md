@@ -44,6 +44,10 @@ Qoidalar va talablar
 
 10. Barcha landing sahifalarni AMP versiyalari bo'lishi kerak
 
+11. Barcha sahifalarni nomi slug ko'rinishida bo'lishi kerak. Hech qanday ortiqcha simvollar ishlatilmasligi kerak. Nom uzunligi SEO uchun optimallashtirilishi maqul
+
+12. Sahifa JavaScript orqali generatsiya bo'ladigan bo'lmasligi kerak. Qidiruv tizimlari uchun uni ko'rish maksimal osson bo'lishi kerak
+
 Namuna forma (HTML):
 <form action="https://ketmonshop.uz/send.php" method="POST">
   <input type="hidden" name="offer_id" value="2348">
