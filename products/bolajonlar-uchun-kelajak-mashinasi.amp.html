@@ -339,6 +339,27 @@
             text-decoration: none;
         }
     </style>
+    <!-- JSON-LD Product Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Bolajonlar uchun kelajak mashinasi - SUPER 01 Concept avtomobil",
+      "image": "https://ketmonshop.uz/offer_images/bolajonlar-uchun-kelajak-mashinasi-2485.webp",
+      "description": "SUPER 01 Concept avtomobil bilan bolangizning tasavvurini yorqin ranglar, quvnoq musiqa va aqlli harakatlar bilan boyiting! Farzandingiz uchun ideal sovg'a.",
+      "sku": "2485",
+      "brand": {
+        "@type": "Brand",
+        "name": "SUPER 01"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://ketmonshop.uz/products/bolajonlar-uchun-kelajak-mashinasi-2485.html",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -463,7 +484,7 @@
                     <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required>
 
                     <label for="phone">Telefon raqamingiz:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX" pattern="[0-9]{9,15}" required>
+                    <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX" pattern="^\+998[0-9]{9}$" required>
 
                     <label for="referrer_input">Qo'shimcha ma'lumot (ixtiyoriy):</label>
                     <input type="text" id="referrer_input" name="referrer_input" placeholder="Agar sizga kimdir tavsiya qilgan bo'lsa...">
