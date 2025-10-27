@@ -372,8 +372,7 @@
                 <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX" required pattern="^\+998[0-9]{9}$">
                 <small>Format: +998XXXXXXXXX</small>
 
-                <label for="referrer_input">Qo'shimcha ma'lumot (ixtiyoriy):</label>
-                <input type="text" id="referrer_input" name="referrer_input" placeholder="Qo'shimcha ma'lumot (ixtiyoriy)">
+                <input type="hidden" name="referrer_input" id="referrer_input">
 
                 <button type="submit">Buyurtma Berish</button>
             </form>
@@ -387,5 +386,13 @@
             <p><a href="https://ketmonshop.uz" target="_blank" rel="noopener noreferrer">KetmonShop.uz</a></p>
         </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var referrerInput = document.getElementById("referrer_input");
+        if (referrerInput) {
+          referrerInput.value = document.referrer;
+        }
+      });
+    </script>
 </body>
 </html>

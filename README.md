@@ -26,7 +26,7 @@ Qoidalar va talablar
 	  - offer_id (mahsulot identifikatori)
 	  - phone
 	  - name
-	- Ixtiyoriy: referrer_input maydoni (agar sahifa JavaScript orqali referer oladigan bo'lsa) — lekin bu majburiy emas.
+	- Ixtiyoriy: `referrer_input` maydoni JavaScript yordamida `document.referrer` qiymati bilan to'ldirilishi kerak. AMP sahifalarda JS ishlamagani sababli bu qoidaga amal qilmaslik kerak
 
 	- Tavsiya: telefon maydoni uchun input mask qo'llash tavsiya etiladi (masalan, Inputmask.js yoki intl-tel-input). Bu foydalanuvchilarga telefon raqamlarini standart formatda kiritishga yordam beradi va server tomonida validatsiyani soddalashtiradi.
 
@@ -48,14 +48,21 @@ Qoidalar va talablar
 
 12. Sahifa JavaScript orqali generatsiya bo'ladigan bo'lmasligi kerak. Qidiruv tizimlari uchun uni ko'rish maksimal osson bo'lishi kerak
 
+13. Har bir kishi ushbu landing sahifalardan foydalanishi mumkin, lekin sahifaning biror joyida "Ketmonshop" ga havola qo'shishlari shart (masalan, sahifa pastida "landing by Ketmonshop").
+
 Namuna forma (HTML):
+```html
 <form action="https://ketmonshop.uz/send.php" method="POST">
   <input type="hidden" name="offer_id" value="2348">
   <input type="text" name="name" placeholder="Ismingiz">
   <input type="tel" name="phone" placeholder="Telefon raqamingiz">
-  <!-- optional: <input type="hidden" name="referrer_input" value="..."> -->
+  <input type="hidden" name="referrer_input">
+  <script>
+	document.querySelector('input[name="referrer_input"]').value = document.referrer;
+  <script>
   <button type="submit">Buyurtma berish</button>
 </form>
+```
 
 Iltimos, barcha yangi landing sahifalarni ushbu qo'llanmaga muvofiq yarating
 
