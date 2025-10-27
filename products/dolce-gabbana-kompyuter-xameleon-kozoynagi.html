@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi - Ko‘zlaringiz uchun Zamonaviy Himoya</title>
     <meta name="description" content="Dolce & Gabbana’dan Kompyuter Xameleon ko‘zoynaklari bilan ko‘zlaringizni ko‘k nur, UV nurlari va kompyuter ko‘rish sindromidan himoya qiling. Yorug‘likka moslashuvchan linzalar va nafis dizayn.">
-    <link rel="canonical" href="https://ketmonshop.github.com/products/dolce-gabbana-kompyuter-xameleon-kozoynagi-2170.html">
+    <link rel="canonical" href="https://ketmonshop.github.io/products/dolce-gabbana-kompyuter-xameleon-kozoynagi.html">
+    <link rel="amphtml" href="https://ketmonshop.github.io/products/dolce-gabbana-kompyuter-xameleon-kozoynagi.amp.html">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi - Ko‘zlaringiz uchun Zamonaviy Himoya">
     <meta property="og:description" content="Dolce & Gabbana’dan Kompyuter Xameleon ko‘zoynaklari bilan ko‘zlaringizni ko‘k nur, UV nurlari va kompyuter ko‘rish sindromidan himoya qiling. Yorug‘likka moslashuvchan linzalar va nafis dizayn.">
     <meta property="og:image" content="https://ketmonshop.uz/offer_images/dolce-gabbana-kompyuter-xameleon-kozoynagi-2170.webp">
-    <meta property="og:url" content="https://ketmonshop.uz/products/dolce-gabbana-kompyuter-xameleon-kozoynagi-2170.html">
+    <meta property="og:url" content="https://ketmonshop.github.io/products/dolce-gabbana-kompyuter-xameleon-kozoynagi.html">
     <meta property="og:type" content="product">
     <meta property="og:site_name" content="Ketmonshop">
 
@@ -21,6 +22,7 @@
     <meta name="twitter:title" content="Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi - Ko‘zlaringiz uchun Zamonaviy Himoya">
     <meta name="twitter:description" content="Dolce & Gabbana’dan Kompyuter Xameleon ko‘zoynaklari bilan ko‘zlaringizni ko‘k nur, UV nurlari va kompyuter ko‘rish sindromidan himoya qiling. Yorug‘likka moslashuvchan linzalar va nafis dizayn.">
     <meta name="twitter:image" content="https://ketmonshop.uz/offer_images/dolce-gabbana-kompyuter-xameleon-kozoynagi-2170.webp">
+    <meta name="twitter:url" content="https://ketmonshop.github.io/products/dolce-gabbana-kompyuter-xameleon-kozoynagi.html">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -188,11 +190,10 @@
                 
                 <div class="mb-6 text-left">
                     <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Telefon raqamingiz:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Masalan: +998 (XX) XXX-XX-XX" required 
-                           pattern="^\+998\s?\(?\d{2}\)?\s?\d{3}-?\d{2}-?\d{2}$"
-                           title="Telefon raqamingizni +998 (XX) XXX-XX-XX formatida kiriting."
+                    <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX" required 
+                           pattern="^\+998[0-9]{9}$"
+                           title="Telefon raqamingizni +998XXXXXXXXX formatida kiriting."
                            class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
-                    <p class="text-xs text-gray-500 mt-1"><i>Eslatma: Telefon raqamingiz uchun input mask (masalan, Inputmask.js) bilan kiritish tavsiya etiladi.</i></p>
                 </div>
                 
                 <div class="mb-6 text-left">
@@ -211,45 +212,12 @@
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-4 text-center">
-            <p>&copy; <span id="currentYear"></span> Ketmonshop.uz. Barcha huquqlar himoyalangan.</p>
+            <p>&copy; 2024 Ketmonshop.uz. Barcha huquqlar himoyalangan.</p>
             <p class="text-sm mt-2">
                 <a href="https://ketmonshop.uz/privacy-policy.html" class="text-gray-400 hover:text-white">Maxfiylik siyosati</a> | 
                 <a href="https://ketmonshop.uz/terms-of-service.html" class="text-gray-400 hover:text-white">Foydalanish shartlari</a>
             </p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-        // Simple client-side phone number formatting suggestion (not a full mask library)
-        const phoneInput = document.getElementById('phone');
-        phoneInput.addEventListener('input', function (e) {
-            let value = e.target.value.replace(/\D/g, ''); // Remove all non-digits
-            let formattedValue = '';
-            if (value.startsWith('998')) {
-                value = value.substring(3); // Remove leading 998 for formatting
-                formattedValue = '+998 ';
-            } else if (value.startsWith('8')) {
-                 value = value.substring(1); // Remove leading 8 if present
-                 formattedValue = '+998 ';
-            } else if (!value.startsWith('+998')) {
-                formattedValue = '+998 ';
-            }
-
-            if (value.length > 0) {
-                formattedValue += '(' + value.substring(0, 2);
-            }
-            if (value.length >= 3) {
-                formattedValue += ') ' + value.substring(2, 5);
-            }
-            if (value.length >= 6) {
-                formattedValue += '-' + value.substring(5, 7);
-            }
-            if (value.length >= 8) {
-                formattedValue += '-' + value.substring(7, 9);
-            }
-            e.target.value = formattedValue;
-        });
-    </script>
 </body>
 </html>
