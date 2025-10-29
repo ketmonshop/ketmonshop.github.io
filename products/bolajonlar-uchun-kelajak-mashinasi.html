@@ -610,8 +610,7 @@
                     <label for="phone">Telefon raqamingiz:</label>
                     <input type="tel" id="phone" name="phone" placeholder="+998 XX XXX XX XX" pattern="^\+998[0-9]{9}$" required>
 
-                    <label for="referrer_input">Qo'shimcha ma'lumot (ixtiyoriy):</label>
-                    <input type="text" id="referrer_input" name="referrer_input" placeholder="Agar sizga kimdir tavsiya qilgan bo'lsa...">
+                    <input type="hidden" id="referrer_input" name="referrer_input">
 
                     <input type="submit" value="Buyurtma Berish">
                 </form>
@@ -624,6 +623,13 @@
             <p>&copy; 2024 KetmonShop. Barcha huquqlar himoyalangan. | <a href="https://ketmonshop.uz" target="_blank">Rasmiy saytga o'tish</a></p>
         </div>
     </footer>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var referrerInput = document.getElementById("referrer_input");
+        if (referrerInput) {
+          referrerInput.value = document.referrer;
+        }
+      });
+    </script>
 </body>
 </html>
