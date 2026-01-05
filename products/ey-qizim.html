@@ -146,8 +146,17 @@
           <input type="hidden" name="offer_id" value="1907">
           <input type="text" name="name" placeholder="Ismingiz" required>
           <input type="tel" name="phone" placeholder="Telefon raqamingiz" required>
+          <input type="hidden" name="referrer_input" id="referrer_input">
           <button type="submit">Buyurtma berish</button>
         </form>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var referrerInput = document.getElementById("referrer_input");
+        if (referrerInput) {
+          referrerInput.value = document.referrer;
+        }
+      });
+    </script>
 </body>
 </html>

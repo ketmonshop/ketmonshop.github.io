@@ -197,9 +197,7 @@
                 </div>
                 
                 <div class="mb-6 text-left">
-                    <label for="referrer_input" class="block text-gray-700 text-sm font-bold mb-2">Qayerdan eshitdingiz? (Majburiy emas)</label>
-                    <input type="text" id="referrer_input" name="referrer_input" placeholder="Misol: Instagram, do'stdan, reklama"
-                           class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all">
+                    <input type="hidden" id="referrer_input" name="referrer_input">
                 </div>
                 
                 <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105">
@@ -219,5 +217,13 @@
             </p>
         </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var referrerInput = document.getElementById("referrer_input");
+        if (referrerInput) {
+          referrerInput.value = document.referrer;
+        }
+      });
+    </script>
 </body>
 </html>
