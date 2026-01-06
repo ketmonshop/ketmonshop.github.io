@@ -3,3 +3,4 @@ generator
 firebase-debug.log
 firebase.json
 r.sh
+.agent
