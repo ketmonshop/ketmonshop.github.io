@@ -1,193 +1,337 @@
 <!doctype html>
 <html lang="uz">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>KetmonShop — Public landing pages</title>
-		<meta name="description" content="KetmonShop public landing pages — a curated list of product landing pages that link to official product pages on ketmonshop.uz">
-		<style>
-			:root{--accent:#0b74de;--bg:#f6f9ff;--card:#fff}
-			body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;background:var(--bg);margin:0;padding:24px;color:#0b1220}
-			.container{max-width:1100px;margin:0 auto}
-			header{display:flex;align-items:center;justify-content:space-between;gap:18px}
-			h1{font-size:20px;margin:0}
-			p.lead{color:#556;margin-top:6px}
-			.search{margin-top:18px;display:flex;gap:12px}
-			.search input{flex:1;padding:10px 12px;border-radius:8px;border:1px solid #e6eefc}
-			.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:18px}
-			.card{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 20px rgba(13,26,50,0.06);display:flex;flex-direction:column;gap:12px;align-items:flex-start}
-			.card-header{display:flex;gap:12px;align-items:flex-start;width:100%}
-			.card img{width:84px;height:120px;object-fit:cover;border-radius:6px}
-			.card .info{flex:1}
-			.card h3{margin:0;font-size:16px}
-			.card .desc{margin:6px 0;color:#445;font-size:14px;line-height:1.5;flex-grow:1}
-			.card a.view{margin-top:auto;color:var(--accent);text-decoration:none;font-weight:600;font-size:14px}
-			@media (max-width:520px){.card-header{flex-direction:row-reverse}.card img{width:74px;height:104px}}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<div>
-					<h1>KetmonShop — Public landing pages</h1>
-					<p class="lead">Curated landing pages that point to official product pages on ketmonshop.uz.</p>
-				</div>
-			</header>
 
-			<div class="search">
-				<input id="q" placeholder="Search landing pages — try 'Adem' or 'tarbiya'" aria-label="Search landing pages">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>KetmonShop — Public landing pages</title>
+	<meta name="description"
+		content="KetmonShop public landing pages — a curated list of product landing pages that link to official product pages on ketmonshop.uz">
+	<style>
+		:root {
+			--accent: #0b74de;
+			--bg: #f6f9ff;
+			--card: #fff
+		}
+
+		body {
+			font-family: Inter, system-ui, Arial, Helvetica, sans-serif;
+			background: var(--bg);
+			margin: 0;
+			padding: 24px;
+			color: #0b1220
+		}
+
+		.container {
+			max-width: 1100px;
+			margin: 0 auto
+		}
+
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 18px
+		}
+
+		h1 {
+			font-size: 20px;
+			margin: 0
+		}
+
+		p.lead {
+			color: #556;
+			margin-top: 6px
+		}
+
+		.search {
+			margin-top: 18px;
+			display: flex;
+			gap: 12px
+		}
+
+		.search input {
+			flex: 1;
+			padding: 10px 12px;
+			border-radius: 8px;
+			border: 1px solid #e6eefc
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+			gap: 16px;
+			margin-top: 18px
+		}
+
+		.card {
+			background: var(--card);
+			padding: 12px;
+			border-radius: 10px;
+			box-shadow: 0 6px 20px rgba(13, 26, 50, 0.06);
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			align-items: flex-start
+		}
+
+		.card-header {
+			display: flex;
+			gap: 12px;
+			align-items: flex-start;
+			width: 100%
+		}
+
+		.card img {
+			width: 84px;
+			height: 120px;
+			object-fit: cover;
+			border-radius: 6px
+		}
+
+		.card .info {
+			flex: 1
+		}
+
+		.card h3 {
+			margin: 0;
+			font-size: 16px
+		}
+
+		.card .desc {
+			margin: 6px 0;
+			color: #445;
+			font-size: 14px;
+			line-height: 1.5;
+			flex-grow: 1
+		}
+
+		.card a.view {
+			margin-top: auto;
+			color: var(--accent);
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 14px
+		}
+
+		@media (max-width:520px) {
+			.card-header {
+				flex-direction: row-reverse
+			}
+
+			.card img {
+				width: 74px;
+				height: 104px
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div>
+				<h1>KetmonShop — Public landing pages</h1>
+				<p class="lead">Curated landing pages that point to official product pages on ketmonshop.uz.</p>
 			</div>
+		</header>
 
-			<div class="grid" id="list">
-				<!-- Card: AL-MUALIM HUSNIXAT -->
-				<article class="card" data-title="AL-MUALIM HUSNIXAT – Bolalar uchun husnixat qo‘llanmasi!">
-					<div class="card-header">
-						<img src="https://ketmonshop.uz/offer_images/almualim-husnixat-bolalar-uchun-husnixat-qollanmasi-2050.webp" alt="AL-MUALIM HUSNIXAT">
-						<div class="info">
-							<h3><a href="./products/almualim-husnixat-bolalar-uchun-husnixat-qollanmasi-2050.html">AL-MUALIM HUSNIXAT</a></h3>
-						</div>
-					</div>
-					<p class="desc">Arab tilida go'zal yozishni o'rganish uchun qo'llanma.</p>
-					<a class="view" href="./products/almualim-husnixat-bolalar-uchun-husnixat-qollanmasi-2050.html">Batafsil →</a>
-				</article>
-
-                <!-- Card: Bolajonlar uchun kelajak mashinasi -->
-                <article class="card" data-title="SUPER 01 Concept avtomobil">
-                    <div class="card-header">
-                        <img src="https://ketmonshop.uz/offer_images/bolajonlar-uchun-kelajak-mashinasi-2485.webp" alt="Bolajonlar uchun kelajak mashinasi">
-                        <div class="info">
-                            <h3><a href="./products/bolajonlar-uchun-kelajak-mashinasi.html">Bolajonlar uchun kelajak mashinasi</a></h3>
-                        </div>
-                    </div>
-                    <p class="desc">SUPER 01 Concept avtomobil bilan bolangizning tasavvurini yorqin ranglar, quvnoq musiqa va aqlli harakatlar bilan boyiting!</p>
-                    <a class="view" href="./products/bolajonlar-uchun-kelajak-mashinasi.html">Batafsil →</a>
-                </article>
-
-                <!-- Card: Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi -->
-                <article class="card" data-title="Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi">
-                    <div class="card-header">
-                        <img src="https://ketmonshop.uz/offer_images/dolce-gabbana-kompyuter-xameleon-kozoynagi-2170.webp" alt="Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi">
-                        <div class="info">
-                            <h3><a href="./products/dolce-gabbana-kompyuter-xameleon-kozoynagi.html">Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi</a></h3>
-                        </div>
-                    </div>
-                    <p class="desc">Dolce & Gabbana’dan Kompyuter Xameleon ko‘zoynaklari bilan ko‘zlaringizni ko‘k nur, UV nurlari va kompyuter ko‘rish sindromidan himoya qiling.</p>
-                    <a class="view" href="./products/dolce-gabbana-kompyuter-xameleon-kozoynagi.html">Batafsil →</a>
-                </article>
-
-
-                <!-- Card: Kelishuv Psixologiyasi -->
-				<article class="card" data-title="Robert Chaldini — Kelishuv Psixologiyasi">
-					<div class="card-header">
-						<img src="https://ketmonshop.uz/offer_images/kelishuvpsixologiyasi-2563.webp" alt="Kelishuv Psixologiyasi">
-						<div class="info">
-							<h3><a href="./products/kelishuv-psixologiyasi.html">Robert Chaldini — Kelishuv Psixologiyasi</a></h3>
-						</div>
-					</div>
-					<p class="desc">Bu kitob sizga insonlarni ishontirish sirlarini, samarali muloqot usullarini va kelishuvga erishishning psixologik usullarini o‘rganishga yordam beradi.</p>
-					<a class="view" href="./products/kelishuv-psixologiyasi.html">Batafsil →</a>
-				</article>
-
-				<!-- Card: Jazosiz tarbiya -->
-				<article class="card" data-title="Adem Gunesh — Jazosiz tarbiya">
-					<div class="card-header">
-						<img src="https://ketmonshop.uz/offer_images/jazosiz-tarbiya-2016.webp" alt="Jazosiz tarbiya">
-						<div class="info">
-							<h3><a href="./products/jazosiz-tarbiya.html">Adem Gunesh — Jazosiz tarbiya</a></h3>
-						</div>
-					</div>
-					<p class="desc">Xalqaro bestseller (1 milliondan ortiq sotilgan) bo'lgan ushbu kitobda farzand tarbiyasiga inqilobiy yondashuv taklif etiladi. Jazolash o'rniga bolaning ehtiyojlarini tushunish, sabr va ijobiy muloqot orqali kuchli munosabatlar qurishni o'rganing.</p>
-					<a class="view" href="./products/jazosiz-tarbiya.html">Batafsil →</a>
-				</article>
-
-				<!-- Card: Odam bo'lish qiyin -->
-				<article class="card" data-title="O'LMAS UMARBEKOV — Odam bo'lish qiyin">
-					<div class="card-header">
-						<img src="https://ketmonshop.uz/offer_images/olmas-umarbekov-odam-bolish-qiyin-2348.webp" alt="Odam bo'lish qiyin">
-						<div class="info">
-							<h3><a href="./products/odam-bolish-qiyin.html">O'LMAS UMARBEKOV — Odam bo'lish qiyin</a></h3>
-						</div>
-					</div>
-					<p class="desc">O'lmas Umarbekovning asari hayot, jamiyat va insoniylik haqida chuqur mulohaza yuritishga chorlaydi. Ta'sirli hikoya orqali ruhiy o'sish imkonini bering.</p>
-					<a class="view" href="./products/odam-bolish-qiyin.html">Batafsil →</a>
-				</article>
-
-				<!-- Card: Ey Qizim -->
-				<article class="card" data-title="Shayx Ali Tantoviy — Ey Qizim">
-					<div class="card-header">
-						<img src="https://ketmonshop.uz/offer_images/ey-qizim-1907.webp" alt="Ey Qizim">
-						<div class="info">
-							<h3><a href="./products/ey-qizim.html">Shayx Ali Tantoviy — Ey Qizim</a></h3>
-						</div>
-					</div>
-					<p class="desc">Ayol-qizlar tarbiyasiga bag'ishlangan eng mashhur asarlardan biri. Islomiy qadriyatlar va zamonaviy hayot haqida muhim saboqlar.</p>
-					<a class="view" href="./products/ey-qizim.html">Batafsil →</a>
-				</article>
-
-				<!-- Card: Million Dollarlik Xatolar -->
-				<article class="card" data-title="Pavel Annenkov — Million Dollarlik Xatolar">
-					<div class="card-header">
-						<img src="https://ketmonshop.uz/offer_images/million-dollarlik-xatolar-854.webp" alt="Million Dollarlik Xatolar">
-						<div class="info">
-							<h3><a href="./products/million-dollarlik-xatolar.html">Pavel Annenkov — Million Dollarlik Xatolar</a></h3>
-						</div>
-					</div>
-					<p class="desc">Tadbirkorlik, boshqaruv va biznes yuritishdagi amaliy qo'llanma.</p>
-					<a class="view" href="./products/million-dollarlik-xatolar.html">Batafsil →</a>
-				</article>
-				<!-- Card: Semirish uchun Samyun Wan BFQ -->
-<article class="card" data-title="Semirish uchun Samyun Wan BFQ">
-    <div class="card-header">
-        <img src="https://ketmonshop.uz/offer_images/semirish-uchun-samyun-wan-bfq-99_thumb.webp" alt="Semirish uchun Samyun Wan BFQ">
-        <div class="info">
-            <h3><a href="./products/semirish-uchun-samyun-wan-bfq.html">Semirish uchun Samyun Wan BFQ</a></h3>
-        </div>
-    </div>
-    <p class="desc">Tabiiy yo'l bilan vazn orttirish va salomatlikni mustahkamlash uchun kapsulalar.</p>
-    <a class="view" href="./products/semirish-uchun-samyun-wan-bfq.html">Batafsil →</a>
-</article>
-
-<!-- Card: Vatan faxri libosingizda -->
-<article class="card" data-title="Vatan faxri libosingizda">
-    <div class="card-header">
-        <img src="https://ketmonshop.uz/offer_images/vatan-faxri-libosingizda-2471.webp" alt="Vatan faxri libosingizda">
-        <div class="info">
-            <h3><a href="./products/vatan-faxri-libosingizda.html">Vatan faxri libosingizda</a></h3>
-        </div>
-    </div>
-    <p class="desc">O'zbekiston Gerbi tasvirlangan yuqori sifatli futbolka.</p>
-    <a class="view" href="./products/vatan-faxri-libosingizda.html">Batafsil →</a>
-</article>
-<!-- Card: Universal Yelimli Skotch -->
-<article class="card" data-title="Universal Yelimli Skotch: Har Qanday Sirt Uchun Mustahkam Yechim (2 metr x 15 sm)">
-    <div class="card-header">
-        <img src="https://ketmonshop.uz/offer_images/universal-yelimli-skotch-har-qanday-sirt-uchun-mustahkam-yechim-2-metr-x-15-sm-2575.webp" alt="Universal Yelimli Skotch">
-        <div class="info">
-            <h3><a href="./products/universal-yelimli-skotch.html">Universal Yelimli Skotch</a></h3>
-        </div>
-    </div>
-    <p class="desc">Har qanday sirt uchun mustahkam yechim.</p>
-    <a class="view" href="./products/universal-yelimli-skotch.html">Batafsil →</a>
-</article>
-			</div>
-
-			<footer>
-				<p>All landing pages are local HTML files in this repository and link to <strong>ketmonshop.uz</strong> for purchases and product details.</p>
-			</footer>
+		<div class="search">
+			<input id="q" placeholder="Search landing pages — try 'Adem' or 'tarbiya'"
+				aria-label="Search landing pages">
 		</div>
 
-		<script>
-			// Simple client-side search/filter for the landing pages grid
-			(function(){
-				const q = document.getElementById('q');
-				const list = Array.from(document.querySelectorAll('#list .card'));
-				q.addEventListener('input', ()=>{
-					const val = q.value.trim().toLowerCase();
-					list.forEach(card=>{
-						const title = card.getAttribute('data-title').toLowerCase();
-						card.style.display = title.includes(val) ? 'flex' : 'none';
-					});
-			})();
-		</script>
-	</body>
+		<div class="grid" id="list">
+			<!-- Card: Sabr va Shukr -->
+			<article class="card" data-title="Sabr va Shukr — Abu Homid G'azzoliy">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/sabr-va-shukr-abu-xomid-gazzoliy-2776.webp"
+						alt="Sabr va Shukr">
+					<div class="info">
+						<h3><a href="./products/sabr-va-shukr-abu-xomid-gazzoliy-2776.html">Sabr va Shukr — Abu Homid
+								G'azzoliy</a></h3>
+					</div>
+				</div>
+				<p class="desc">Islom dinining asosi bo'lgan sabr va shukrni o'rgatuvchi noyob asar. Kundalik hayot
+					uchun foydali maslahatlar.</p>
+				<a class="view" href="./products/sabr-va-shukr-abu-xomid-gazzoliy-2776.html">Batafsil →</a>
+			</article>
+			<!-- Card: AL-MUALIM HUSNIXAT -->
+			<article class="card" data-title="AL-MUALIM HUSNIXAT – Bolalar uchun husnixat qo‘llanmasi!">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/almualim-husnixat-bolalar-uchun-husnixat-qollanmasi-2050.webp"
+						alt="AL-MUALIM HUSNIXAT">
+					<div class="info">
+						<h3><a href="./products/almualim-husnixat-bolalar-uchun-husnixat-qollanmasi-2050.html">AL-MUALIM
+								HUSNIXAT</a></h3>
+					</div>
+				</div>
+				<p class="desc">Arab tilida go'zal yozishni o'rganish uchun qo'llanma.</p>
+				<a class="view" href="./products/almualim-husnixat-bolalar-uchun-husnixat-qollanmasi-2050.html">Batafsil
+					→</a>
+			</article>
+
+			<!-- Card: Bolajonlar uchun kelajak mashinasi -->
+			<article class="card" data-title="SUPER 01 Concept avtomobil">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/bolajonlar-uchun-kelajak-mashinasi-2485.webp"
+						alt="Bolajonlar uchun kelajak mashinasi">
+					<div class="info">
+						<h3><a href="./products/bolajonlar-uchun-kelajak-mashinasi.html">Bolajonlar uchun kelajak
+								mashinasi</a></h3>
+					</div>
+				</div>
+				<p class="desc">SUPER 01 Concept avtomobil bilan bolangizning tasavvurini yorqin ranglar, quvnoq musiqa
+					va aqlli harakatlar bilan boyiting!</p>
+				<a class="view" href="./products/bolajonlar-uchun-kelajak-mashinasi.html">Batafsil →</a>
+			</article>
+
+			<!-- Card: Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi -->
+			<article class="card" data-title="Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/dolce-gabbana-kompyuter-xameleon-kozoynagi-2170.webp"
+						alt="Dolce & Gabbana Kompyuter Xameleon Ko‘zoynagi">
+					<div class="info">
+						<h3><a href="./products/dolce-gabbana-kompyuter-xameleon-kozoynagi.html">Dolce & Gabbana
+								Kompyuter Xameleon Ko‘zoynagi</a></h3>
+					</div>
+				</div>
+				<p class="desc">Dolce & Gabbana’dan Kompyuter Xameleon ko‘zoynaklari bilan ko‘zlaringizni ko‘k nur, UV
+					nurlari va kompyuter ko‘rish sindromidan himoya qiling.</p>
+				<a class="view" href="./products/dolce-gabbana-kompyuter-xameleon-kozoynagi.html">Batafsil →</a>
+			</article>
+
+
+			<!-- Card: Kelishuv Psixologiyasi -->
+			<article class="card" data-title="Robert Chaldini — Kelishuv Psixologiyasi">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/kelishuvpsixologiyasi-2563.webp"
+						alt="Kelishuv Psixologiyasi">
+					<div class="info">
+						<h3><a href="./products/kelishuv-psixologiyasi.html">Robert Chaldini — Kelishuv
+								Psixologiyasi</a></h3>
+					</div>
+				</div>
+				<p class="desc">Bu kitob sizga insonlarni ishontirish sirlarini, samarali muloqot usullarini va
+					kelishuvga erishishning psixologik usullarini o‘rganishga yordam beradi.</p>
+				<a class="view" href="./products/kelishuv-psixologiyasi.html">Batafsil →</a>
+			</article>
+
+			<!-- Card: Jazosiz tarbiya -->
+			<article class="card" data-title="Adem Gunesh — Jazosiz tarbiya">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/jazosiz-tarbiya-2016.webp" alt="Jazosiz tarbiya">
+					<div class="info">
+						<h3><a href="./products/jazosiz-tarbiya.html">Adem Gunesh — Jazosiz tarbiya</a></h3>
+					</div>
+				</div>
+				<p class="desc">Xalqaro bestseller (1 milliondan ortiq sotilgan) bo'lgan ushbu kitobda farzand
+					tarbiyasiga inqilobiy yondashuv taklif etiladi. Jazolash o'rniga bolaning ehtiyojlarini tushunish,
+					sabr va ijobiy muloqot orqali kuchli munosabatlar qurishni o'rganing.</p>
+				<a class="view" href="./products/jazosiz-tarbiya.html">Batafsil →</a>
+			</article>
+
+			<!-- Card: Odam bo'lish qiyin -->
+			<article class="card" data-title="O'LMAS UMARBEKOV — Odam bo'lish qiyin">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/olmas-umarbekov-odam-bolish-qiyin-2348.webp"
+						alt="Odam bo'lish qiyin">
+					<div class="info">
+						<h3><a href="./products/odam-bolish-qiyin.html">O'LMAS UMARBEKOV — Odam bo'lish qiyin</a></h3>
+					</div>
+				</div>
+				<p class="desc">O'lmas Umarbekovning asari hayot, jamiyat va insoniylik haqida chuqur mulohaza
+					yuritishga chorlaydi. Ta'sirli hikoya orqali ruhiy o'sish imkonini bering.</p>
+				<a class="view" href="./products/odam-bolish-qiyin.html">Batafsil →</a>
+			</article>
+
+			<!-- Card: Ey Qizim -->
+			<article class="card" data-title="Shayx Ali Tantoviy — Ey Qizim">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/ey-qizim-1907.webp" alt="Ey Qizim">
+					<div class="info">
+						<h3><a href="./products/ey-qizim.html">Shayx Ali Tantoviy — Ey Qizim</a></h3>
+					</div>
+				</div>
+				<p class="desc">Ayol-qizlar tarbiyasiga bag'ishlangan eng mashhur asarlardan biri. Islomiy qadriyatlar
+					va zamonaviy hayot haqida muhim saboqlar.</p>
+				<a class="view" href="./products/ey-qizim.html">Batafsil →</a>
+			</article>
+
+			<!-- Card: Million Dollarlik Xatolar -->
+			<article class="card" data-title="Pavel Annenkov — Million Dollarlik Xatolar">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/million-dollarlik-xatolar-854.webp"
+						alt="Million Dollarlik Xatolar">
+					<div class="info">
+						<h3><a href="./products/million-dollarlik-xatolar.html">Pavel Annenkov — Million Dollarlik
+								Xatolar</a></h3>
+					</div>
+				</div>
+				<p class="desc">Tadbirkorlik, boshqaruv va biznes yuritishdagi amaliy qo'llanma.</p>
+				<a class="view" href="./products/million-dollarlik-xatolar.html">Batafsil →</a>
+			</article>
+			<!-- Card: Semirish uchun Samyun Wan BFQ -->
+			<article class="card" data-title="Semirish uchun Samyun Wan BFQ">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/semirish-uchun-samyun-wan-bfq-99_thumb.webp"
+						alt="Semirish uchun Samyun Wan BFQ">
+					<div class="info">
+						<h3><a href="./products/semirish-uchun-samyun-wan-bfq.html">Semirish uchun Samyun Wan BFQ</a>
+						</h3>
+					</div>
+				</div>
+				<p class="desc">Tabiiy yo'l bilan vazn orttirish va salomatlikni mustahkamlash uchun kapsulalar.</p>
+				<a class="view" href="./products/semirish-uchun-samyun-wan-bfq.html">Batafsil →</a>
+			</article>
+
+			<!-- Card: Vatan faxri libosingizda -->
+			<article class="card" data-title="Vatan faxri libosingizda">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/vatan-faxri-libosingizda-2471.webp"
+						alt="Vatan faxri libosingizda">
+					<div class="info">
+						<h3><a href="./products/vatan-faxri-libosingizda.html">Vatan faxri libosingizda</a></h3>
+					</div>
+				</div>
+				<p class="desc">O'zbekiston Gerbi tasvirlangan yuqori sifatli futbolka.</p>
+				<a class="view" href="./products/vatan-faxri-libosingizda.html">Batafsil →</a>
+			</article>
+			<!-- Card: Universal Yelimli Skotch -->
+			<article class="card"
+				data-title="Universal Yelimli Skotch: Har Qanday Sirt Uchun Mustahkam Yechim (2 metr x 15 sm)">
+				<div class="card-header">
+					<img src="https://ketmonshop.uz/offer_images/universal-yelimli-skotch-har-qanday-sirt-uchun-mustahkam-yechim-2-metr-x-15-sm-2575.webp"
+						alt="Universal Yelimli Skotch">
+					<div class="info">
+						<h3><a href="./products/universal-yelimli-skotch.html">Universal Yelimli Skotch</a></h3>
+					</div>
+				</div>
+				<p class="desc">Har qanday sirt uchun mustahkam yechim.</p>
+				<a class="view" href="./products/universal-yelimli-skotch.html">Batafsil →</a>
+			</article>
+		</div>
+
+		<footer>
+			<p>All landing pages are local HTML files in this repository and link to <strong>ketmonshop.uz</strong> for
+				purchases and product details.</p>
+		</footer>
+	</div>
+
+	<script>
+		// Simple client-side search/filter for the landing pages grid
+		(function () {
+			const q = document.getElementById('q');
+			const list = Array.from(document.querySelectorAll('#list .card'));
+			q.addEventListener('input', () => {
+				const val = q.value.trim().toLowerCase();
+				list.forEach(card => {
+					const title = card.getAttribute('data-title').toLowerCase();
+					card.style.display = title.includes(val) ? 'flex' : 'none';
+				});
+			});
+		})();
+	</script>
+</body>
+
 </html>
